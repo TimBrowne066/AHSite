@@ -25,10 +25,19 @@ ul{
 }
 
 .new_job{
-  display: inline-grid;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 input{
   width: 100%
+}
+
+form textarea{
+  width: 100%;
+}
+
+#job_title{
+  width: 100%;
 }
