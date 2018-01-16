@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   get 'hello_world', to: 'hello_world#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  resources :jobs do
+  end
 end

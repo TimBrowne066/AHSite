@@ -15,8 +15,9 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "Current Jobs" do
           ul do
-            Job.all.map do |post|
-              li post.title
+            Job.all.map do |job|
+              li job.title
+              li link_to "Delete", job_path(job), :method => :delete, :data => {:confirm => "Are you sure?"}
             end
           end
         end
@@ -25,8 +26,8 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "Applications" do
           ul do
-            Job.all.map do |post|
-              li post.title
+            Job.all.map do |job|
+              li job.title
             end
           end
         end

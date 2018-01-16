@@ -26,14 +26,14 @@ class JobsController < ApplicationController
   end
 
   def destroy
-    @job = job.find(params[:id])
+    @job = Job.find(params[:id])
     @job.destroy
-    redirect_back(fallback_location: root_path) 
+    redirect_to admin_root_path
   end
 
   private
 
   def job_params
-    params.require(:job).permit(:title, :summary, :description, :expectations, :requirements, :created_at, :updated_at)
+    params.permit(:id, :title, :summary, :description, :expectations, :requirements, :created_at, :updated_at)
   end
 end
