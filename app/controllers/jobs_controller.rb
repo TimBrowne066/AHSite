@@ -14,6 +14,13 @@ class JobsController < ApplicationController
 
   def create
     @job = Job.create(job_params)
+
+    respond_to do |format|
+      if @job.save
+        format.html { redirect_back(fallback_location: admin_root_path ) }
+        format.json { redirect_back(fallback_location: admin_root_path ) }
+      end
+    end
   end
 
   def edit
@@ -34,6 +41,6 @@ class JobsController < ApplicationController
   private
 
   def job_params
-    params.permit(:id, :title, :summary, :description, :expectations, :requirements, :created_at, :updated_at)
+    params.require(:job).permit(:title, :summary, :description, :expectations, :requirements, :created_at, :updated_at)
   end
 end

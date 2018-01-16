@@ -1,3 +1,5 @@
+require 'formtastic'
+
 ActiveAdmin.register_page "Dashboard" do
 
   menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }
@@ -33,5 +35,28 @@ ActiveAdmin.register_page "Dashboard" do
         end
       end
     end
+    form_for Job.new, :url => jobs_path, action: :create, :class => 'form-class' do |f|
+      f.label :title
+      f.text_field :title
+      f.label :summary
+      f.text_area :summary
+      f.label :description
+      f.text_area :description
+      f.label :expectations
+      f.text_area :expectations
+      f.label :requirements
+      f.text_area :requirements
+      f.submit
+    end
   end # content
+
+end
+
+ActiveAdmin.register Job  do
+  controller do
+    def permitted_params
+      params.permit :utf8, :submit, :job, :commit, :id,
+                model: [:title, :summary, :description, :expectations, :requirements, :created_at, :updated_at]
+    end
+  end
 end

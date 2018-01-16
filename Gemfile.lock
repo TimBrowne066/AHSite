@@ -389,6 +389,7 @@ DEPENDENCIES
   email_spec
   factory_girl_rails
   faker
+  formtastic (~> 3.0)
   generator_spec
   jbuilder (~> 2.5)
   launchy

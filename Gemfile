@@ -7,6 +7,7 @@ end
 gem 'activeadmin'
 
 # Plus integrations with:
+gem 'formtastic', '~> 3.0'
 gem 'devise'
 gem 'cancan' # or cancancan
 gem 'draper'
