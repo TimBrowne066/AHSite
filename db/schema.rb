@@ -52,6 +52,9 @@ ActiveRecord::Schema.define(version: 20180116163146) do
     t.string "description", null: false
     t.string "expectations"
     t.string "requirements"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

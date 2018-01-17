@@ -6,6 +6,9 @@ class CreateJobs < ActiveRecord::Migration[5.1]
       t.string :description, null: false
       t.string :expectations
       t.string :requirements
+      t.string :city
+      t.string :state
+      t.string :zipcode
       t.timestamps
     end
   end

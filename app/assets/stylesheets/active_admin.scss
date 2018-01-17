@@ -34,11 +34,26 @@ input{
   width: 100%
 }
 
+form textfield{
+  width: 100%;
+  height: 100px;
+}
+
 form textarea{
   width: 100%;
   height: 100px;
 }
 
 #job_title{
+  width: 100%;
+}
+
+#job_city{
+  width: 100%;
+}
+#job_state{
+  width: 100%;
+}
+#job_zipcode{
   width: 100%;
 }

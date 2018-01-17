@@ -42,6 +42,12 @@ ActiveAdmin.register_page "Dashboard" do
           form_for Job.new, :url => jobs_path, action: :create, :class => 'form-class' do |f|
             f.label :title
             f.text_field :title
+            f.label :city
+            f.text_field :city
+            f.label :state
+            f.text_field :state
+            f.label :zipcode
+            f.text_field :zipcode
             f.label :summary
             f.text_area :summary
             f.label :description
@@ -62,7 +68,7 @@ ActiveAdmin.register Job  do
   controller do
     def permitted_params
       params.permit :utf8, :submit, :job, :commit, :id,
-                model: [:title, :summary, :description, :expectations, :requirements, :created_at, :updated_at]
+                model: [:title, :summary, :description, :expectations, :requirements, :city, :state, :zipcode, :created_at, :updated_at]
     end
   end
 end
