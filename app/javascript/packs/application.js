@@ -6,5 +6,11 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
+import ReactOnRails from 'react-on-rails';
+import HomeContainer from '../containers/homeContainer'
+import Footer from '../components/footer';
+import NavBar from '../components/navBar';
 
-console.log('Hello World from Webpacker')
+ReactOnRails.register({
+  HomeContainer, NavBar
+});
