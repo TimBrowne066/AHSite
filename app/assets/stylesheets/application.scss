@@ -79,9 +79,10 @@
          list-style: none;
          text-align: center;
          position: absolute;
-         top: 20%;
+         top: 10%;
          left: 20%;
          right: 20%;
+         bottom: 20%;
          > li {
            opacity: 0;
            transition: .5s;

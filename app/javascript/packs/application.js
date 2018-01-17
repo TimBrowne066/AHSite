@@ -10,8 +10,9 @@ import ReactOnRails from 'react-on-rails';
 import HomeContainer from '../containers/homeContainer'
 import Footer from '../components/footer';
 import NavBar from '../components/navBar';
-import JobsContainer from '../containers/jobsContainer'
+import JobsContainer from '../containers/jobsContainer';
+import JobShowContainer from '../containers/jobShowContainer';
 
 ReactOnRails.register({
-  HomeContainer, NavBar, JobsContainer
+  HomeContainer, NavBar, JobsContainer, JobShowContainer
 });
