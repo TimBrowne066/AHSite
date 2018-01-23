@@ -168,6 +168,8 @@
 }
 #home-2 {
   background-image: asset_url('div2.jpg');
+  padding: 80px;
+  height: 150vh;
 }
 #home-3 {
   background-image: asset_url('div3.jpg');
@@ -262,4 +264,14 @@ h2{
 
 .menu-panel:hover{
   background-color: rgba(0,153,255,0.8);
+}
+
+.home-2-container{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5vh;
+}
+
+.container-2-image{
+  width: 100%;
+  text-align: center;
 }
