@@ -14,104 +14,166 @@
  require_self*/
  html{
    font-family: helvetica;
-   background-color: lightgray;
+   background-color: white;
  }
 
- $blackColor: #020304;
 
- .NavBar {
+ a
+ {
+   text-decoration: none;
+   color: #232323;
+   transition: color 0.3s ease;
+ }
+
+ a:hover
+ {
+   color: tomato;
+ }
+
+ #menuToggle
+ {
+   display: block;
    position: fixed;
-     input + label {
-       position: fixed;
-       top: 40px;
-       right: 40px;
-       height: 20px;
-       width: 30px;
-       z-index: 5;
-       span {
-         position: absolute;
-         width: 100%;
-         height: 2px;
-         top: 50%;
-         margin-top: -1px;
-         left: 0;
-         display: block;
-         background: lightblue;
-         border: 1px solid lightblue;
-         transition: .5s;
-       }
-       span:first-child {
-         top: 3px;
-       }
-       span:last-child {
-         top: 16px;
-       }
-     }
-     label:hover {
-       cursor: pointer;
-     }
-     input:checked + label {
-       span {
-         opacity: 0;
-         top: 50%;
-       }
-       span:first-child {
-         opacity: 1;
-         transform: rotate(405deg);
-       }
-       span:last-child {
-         opacity: 1;
-         transform: rotate(-405deg);
-       }
-     }
-     input ~ nav {
-       background: rgba(0,0,0,0);
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100px;
-       z-index: 3;
-       transition: .5s;
-       transition-delay: .5s;
-       overflow: hidden;
-       > ul {
-         list-style: none;
-         text-align: center;
-         position: absolute;
-         top: 10%;
-         left: 20%;
-         right: 20%;
-         bottom: 20%;
-         > li {
-           opacity: 0;
-           transition: .5s;
-           transition-delay: 0s;
-           > a {
-             text-decoration: none;
-             text-transform: uppercase;
-             color: $blackColor;
-             font-weight: 700;
-             font-family: sans-serif;
-             display: block;
-             padding: 30px;
-           }
-         }
-       }
-     }
-     input:checked ~ nav {
-       background-color: white;
-       height: 100%;
-       transition-delay: 0s;
-       > ul {
-         > li {
-           opacity: 1;
-           transition-delay: .5s;
-         }
-       }
-     }
+   width: 100%;
+   height: 120vh;
+   top: 50px;
+   left: 50px;
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
  }
 
-#burger{
-  visibility: hidden;
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   cursor: pointer;
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   -webkit-touch-callout: none;
+ }
+
+
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   background: #cdcdcd;
+   border-radius: 3px;
+   z-index: 1;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+
+ /*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 100%;
+   height: 120vh;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+.navBar{
+  height: 0px;
+
+}
+section {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+#home-1 {
+  background-image: url('https://res.cloudinary.com/kokkieh/image/upload/v1441711699/building-925757_1920_e7zlcl.jpg');
+}
+#home-2 {
+  background-image: url('https://res.cloudinary.com/kokkieh/image/upload/v1441711721/glass-909264_1920_kj77yx.jpg');
+}
+#home-3 {
+  background-image: url('https://res.cloudinary.com/kokkieh/image/upload/v1441711717/building-922529_1920_icicwy.jpg');
+}
+#home-4 {
+  background-image: url('https://res.cloudinary.com/kokkieh/image/upload/v1441711695/window-855371_1920_mkw8de.jpg');
+}
+
+.welcome{
+  color: black;
+  padding-top: 150px;
 }

@@ -5,13 +5,15 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Slabo+27px" rel="stylesheet">
     <%= javascript_pack_tag 'application' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <%= react_component("NavBar", prerender: false) %>
 
   <body>
-    <%= react_component("NavBar", prerender: false) %>
 
     <%= yield %>
   </body>
