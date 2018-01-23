@@ -14,14 +14,14 @@ class NavBar extends React.Component {
       <nav className="navBar" role="navigation">
         <div id="menuToggle">
           <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           <ul id="menu">
-            <a href="/"><li>Home</li></a>
-            <a href="#"><li>About Us</li></a>
-            <a href="#"><li>Job Listings</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="/"><li className="menu-panel">Home</li></a>
+            <a href="#"><li className="menu-panel">About Us</li></a>
+            <a href="#"><li className="menu-panel">Job Listings</li></a>
+            <a href="#"><li className="menu-panel">Contact</li></a>
           </ul>
         </div>
       </nav>
