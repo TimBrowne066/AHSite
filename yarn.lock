@@ -4849,6 +4849,13 @@ react-prop-types@^0.4.0:
   dependencies:
     warning "^3.0.0"
 
+react-reveal@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-0.7.3.tgz#4b7265b48251813acf735ab862d1687ad85d4570"
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.5.10"
+
 react-transition-group@^2.0.0, react-transition-group@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.2.1.tgz#e9fb677b79e6455fd391b03823afe84849df4a10"
