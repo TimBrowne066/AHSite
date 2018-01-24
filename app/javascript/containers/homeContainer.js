@@ -46,13 +46,13 @@ class HomeContainer extends React.Component {
                   <div className="container-2-content">
 
                     <h1 className="text-left">Hello</h1>
-                    <Zoom delay={300}><ul>
+                    <ul>
                       <li>Stuff</li>
                       <li>Stuff</li>
                       <li>Stuff</li>
                       <li>Stuff</li>
                       <li>Stuff</li>
-                    </ul></Zoom>
+                    </ul>
                   </div>
                 </Col>
               </Row>

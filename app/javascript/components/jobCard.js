@@ -9,10 +9,13 @@ const JobCard = (props) => {
     <Row>
       <Col sm={12}>
         <div className="JobCard">
-          <a href={"/jobs/"+props.id}>{props.title}</a>
-          <p>{props.city}, {props.state}</p>
+          <Button className="link-button" href={"/jobs/"+props.id}>{props.title}</Button>
+          <p><i>{props.city}, {props.state}</i></p>
+          <b>About:</b>
           <p>{props.summary}</p>
-          <p>{date2}</p>
+          <br/>
+          <i>Posted on:</i>
+          <i>{date2}</i>
         </div>
       </Col>
     </Row>

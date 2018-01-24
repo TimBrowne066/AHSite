@@ -2,6 +2,7 @@ import React from 'react';
 import JobCard from '../components/jobCard';
 import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, Well } from 'react-bootstrap';
+import JobsCarousel from '../components/jobsCarousel';
 
 class JobsContainer extends React.Component {
   constructor(props) {
@@ -30,10 +31,13 @@ class JobsContainer extends React.Component {
       )
     })
     return (
+
       <div className="JobsContainer">
+      <div>
+        <JobsCarousel/>
+      </div>
         <div>
-          <Grid>
-            <h1>Jobs Container</h1>
+          <Grid className="home-2-container">
             {jobs}
           </Grid>
         </div>
