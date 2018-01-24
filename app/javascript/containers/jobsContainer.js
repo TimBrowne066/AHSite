@@ -13,9 +13,9 @@ class JobsContainer extends React.Component {
   }
 
   render() {
-    let jobs = this.props.jobs.map(job => {
+    let jobs = this.state.jobs.map(job => {
       return(
-        <JobCard
+        <Fade delay={500}><JobCard
           key={job.id}
           id={job.id}
           title={job.title}
@@ -27,7 +27,7 @@ class JobsContainer extends React.Component {
           city={job.city}
           state={job.state}
           zipcode={job.zipcode}
-        />
+        /></Fade>
       )
     })
     return (
@@ -38,6 +38,7 @@ class JobsContainer extends React.Component {
       </div>
         <div>
           <Grid className="home-2-container">
+          <h1>Jobs</h1>
             {jobs}
           </Grid>
         </div>
