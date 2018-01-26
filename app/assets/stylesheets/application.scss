@@ -284,6 +284,7 @@ h2{
   width: none;
   .detail{
     background-color: rgba(0,153,255,0.8);
+    color: white;
     margin: 0px;
     border-bottom: none;
     padding: 5px;
@@ -297,5 +298,16 @@ h2{
     border-bottom: none;
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
+  }
+}
+
+.JobShowContainer{
+  background-image: asset_url('div3.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  h1{
+    margin-top: 0px;
   }
 }

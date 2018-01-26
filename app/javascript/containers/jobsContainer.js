@@ -1,6 +1,5 @@
 import React from 'react';
 import JobCard from '../components/jobCard';
-import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, Well, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import JobsCarousel from '../components/jobsCarousel';
 import SearchInput, {createFilter} from 'react-search-input'
