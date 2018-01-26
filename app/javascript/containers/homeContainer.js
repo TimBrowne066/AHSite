@@ -1,7 +1,6 @@
 import React from 'react';
 import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, Well } from 'react-bootstrap';
 import Logo from '../../assets/images/logo1.png';
-import Me from '../../assets/images/me_panel.png';
 import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import PartnerCarousel from '../components/partnerCarousel'
 import Twitter from '../../assets/images/twitter.png';
@@ -43,28 +42,60 @@ class HomeContainer extends React.Component {
         </div>
         <div className="section" id="home-2">
           <Fade><div className="home-2-container">
-              <Row>
+              <Row className="container-2-title">
                 <Col sm={12}>
-                  <h1>Container 2 Title</h1>
+                  <h1>IT STAFFING FOR TODAY.</h1>
+                  <p>AgileHires was born out of the idea that IT recruiting was a good concept, but could be done much better. Find out why AgileHires is IT Recruiting for Today. Our recruiting efforts are focused in Pennsylvania, New Jersey, and Delaware.</p>
                 </Col>
               </Row>
               <Row>
 
-                <Col className="text-center" sm={6}>
-                  <Image className="container-2-image" src={Me}/>
-                </Col>
-                <Col className="text-left" sm={6}>
-                  <div className="container-2-content">
-
-                    <h1 className="text-left">Hello</h1>
-                    <ul>
-                      <li>Stuff</li>
-                      <li>Stuff</li>
-                      <li>Stuff</li>
-                      <li>Stuff</li>
-                      <li>Stuff</li>
-                    </ul>
+              <Col className="text-center" sm={4}>
+                <h1>For clients:</h1>
+                <div className="info-bubble">
+                  <p>Fees starting at</p>
+                  <h1>15%</h1>
+                </div>
+                  <ul>
+                    <li>Every one of our experienced recruiters has first-hand knowledge of the IT industry.</li>
+                    <li>We are able to be flexible, with fees that start at 15% and payment plans available.</li>
+                    <li>We utilize most available resources for finding the perfect candidate.</li>
+                    <li>We rely on connections gained through years of experience in IT, not just the job boards.</li>
+                    <li>We take time to meet each candidate in person to determine if they are indeed a great fit.</li>
+                  </ul>
+              </Col>
+                <Col className="text-center" sm={4}>
+                  <h1>For candidates:</h1>
+                  <div className="info-bubble">
+                    <p>Our recruiters have</p>
+                    <h1 className="real-it-experience">REAL IT EXPERIENCE</h1>
                   </div>
+                    <ul>
+                      <li>With knowledge of the IT industry, we can provide valuable detail about actual job responsibilities.</li>
+                      <li>We deliver specifics about the role, the company, and the team you will be a part of.</li>
+                      <li>We give feedback on your resume, helping make you more attractive on the job market.</li>
+                      <li>We will provide consistent follow up and feedback as to why you did not get an interview or were not hired.</li>
+                      <li>If you are actively seeking, we will market you to open positions rather than letting your resume sit in a pile.</li>
+                    </ul>
+                </Col>
+                <Col className="text-center" sm={4}>
+                  <h1>The Competition</h1>
+                  <div className="info-bubble">
+                    <p>Fees as high as</p>
+                    <h1>22%</h1>
+                  </div>
+                    <ul>
+                      <li>Recruiters rarely ever have backgrounds in technology, and cannot convey the specifics of a role.</li>
+                      <li>They use the job boards(Monster, Careerbuilder, etc) 90% of the time (which you could have paid for yourself!).</li>
+                      <li>Usually find and forward resumes after a quick phone conversation (or none at all!).</li>
+                      <li>They provide no feedback, but they will modify your resume without you asking at times.</li>
+                      <li>They leave your resume to collect dust, only calling you when they have a job that you could be a fit for.</li>
+                    </ul>
+                </Col>
+              </Row>
+              <Row className="container-2-title">
+                <Col sm={12}>
+                  <p>At AgileHires, we have a passion for how recruiting should be done. We’re confident you won’t be disappointed with your experience with us. Any more questions? Please email us!</p>
                 </Col>
               </Row>
           </div></Fade>
