@@ -12,7 +12,7 @@ import Footer from '../components/footer';
 import NavBar from '../components/navBar';
 import JobsContainer from '../containers/jobsContainer';
 import JobShowContainer from '../containers/jobShowContainer';
-
+import AboutContainer from '../containers/aboutContainer';
 ReactOnRails.register({
-  HomeContainer, NavBar, JobsContainer, JobShowContainer
+  HomeContainer, NavBar, JobsContainer, JobShowContainer, AboutContainer,
 });

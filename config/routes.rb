@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root to: "home#show"
   resources :jobs do
   end
+  resource :about, only: [:show]
 end
