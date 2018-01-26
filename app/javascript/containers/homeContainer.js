@@ -50,7 +50,7 @@ class HomeContainer extends React.Component {
               </Row>
               <Row>
 
-              <Col className="text-center" sm={4}>
+              <Col className="text-center" sm={12} lg={4}>
                 <h1>For clients:</h1>
                 <div className="info-bubble">
                   <p>Fees starting at</p>
@@ -64,7 +64,7 @@ class HomeContainer extends React.Component {
                     <li>We take time to meet each candidate in person to determine if they are indeed a great fit.</li>
                   </ul>
               </Col>
-                <Col className="text-center" sm={4}>
+                <Col className="text-center" sm={12} lg={4}>
                   <h1>For candidates:</h1>
                   <div className="info-bubble">
                     <p>Our recruiters have</p>
@@ -78,8 +78,8 @@ class HomeContainer extends React.Component {
                       <li>If you are actively seeking, we will market you to open positions rather than letting your resume sit in a pile.</li>
                     </ul>
                 </Col>
-                <Col className="text-center" sm={4}>
-                  <h1>The Competition</h1>
+                <Col className="text-center" sm={12} lg={4}>
+                  <h1>The Competition:</h1>
                   <div className="info-bubble">
                     <p>Fees as high as</p>
                     <h1>22%</h1>
@@ -101,6 +101,7 @@ class HomeContainer extends React.Component {
           </div></Fade>
         </div>
         <div className="section" id="home-3">
+          <PartnerCarousel/>
           <PartnerCarousel/>
         </div>
         <div className="section" id="home-4"></div>
