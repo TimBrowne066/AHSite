@@ -19,8 +19,8 @@ class NavBar extends React.Component {
             <span></span>
           <ul id="menu">
             <a href="/"><li className="menu-panel">Home</li></a>
-            <a href="/about"><li className="menu-panel">About Us</li></a>
-            <a href="/jobs"><li className="menu-panel">Job Listings</li></a>
+            <a href="/about"><li className="menu-panel">About</li></a>
+            <a href="/jobs"><li className="menu-panel">Jobs</li></a>
             <a href="#"><li className="menu-panel">Contact</li></a>
           </ul>
         </div>

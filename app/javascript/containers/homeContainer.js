@@ -95,7 +95,7 @@ class HomeContainer extends React.Component {
               </Row>
               <Row className="container-2-title">
                 <Col sm={12}>
-                  <p>At AgileHires, we have a passion for how recruiting should be done. We’re confident you won’t be disappointed with your experience with us. Any more questions? Please email us!</p>
+                  <p className="text-center">At AgileHires, we have a passion for how recruiting should be done. We’re confident you won’t be disappointed with your experience with us. Any more questions? Please email us!</p>
                 </Col>
               </Row>
           </div></Fade>
