@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, Well } from 'react-bootstrap';
+import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, ButtonToolbar, Well } from 'react-bootstrap';
 import Logo from '../../assets/images/logo1.png';
 import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import PartnerCarousel from '../components/partnerCarousel'
@@ -7,6 +7,8 @@ import Twitter from '../../assets/images/twitter.png';
 import Tumblr from '../../assets/images/tumblr.png';
 import Email from '../../assets/images/email.png';
 import Phone from '../../assets/images/phone.png';
+import BeGroup from '../../assets/images/postcard_1_valentines_sample_small.png';
+import ZipCode from '../../assets/images/postcard_1_linkedin_picture.png'
 
 class HomeContainer extends React.Component {
   constructor(props) {
@@ -99,7 +101,36 @@ class HomeContainer extends React.Component {
           </div></Fade>
         </div>
         <div className="section" id="home-3">
-
+          <Fade><div className="home-3-container">
+            <Row>
+              <Col sm={12} lg={6}>
+                <Image responsive className="home-3-image" src={ZipCode}/><br/>
+              </Col>
+              <Col className="container-3-block" sm={12} lg={6}>
+                <h1>Change The Game</h1>
+                <p>AgileHires is excited to bring change to the recruiting industry.  We're about relationships, not resumes.  We recently teamed with CodedByKids to provide tailored technical talent to local companies.  If you need Node, Angular, Ruby, PHP, etc - they will teach it.  ZipCode students focus on Java & .NET.</p>
+                <ButtonToolbar>
+                  <Button bsSize="large" bsStyle="danger">Learn More</Button>
+                  <Button bsSize="large" bsStyle="warning">Contact Us</Button>
+                </ButtonToolbar>
+              </Col>
+            </Row>
+          </div>
+          <div className="home-3-container">
+            <Row>
+              <Col sm={12} lg={6}>
+                <Image responsive className="home-3-image" src={BeGroup}/><br/>
+              </Col>
+              <Col className="container-3-block" sm={12} lg={6}>
+                <h1>Easy To Love</h1>
+                <p>Get ready to fall in love with your talent partner.  AgileHires is the only IT recruiting agency built from the ground up to be different, and now we've partnered with the Be Group to provide outstanding Sales and Marketing candidates.</p>
+                <ButtonToolbar>
+                  <Button bsSize="large" bsStyle="danger">Learn More</Button>
+                  <Button bsSize="large" bsStyle="warning">Contact Us</Button>
+                </ButtonToolbar>
+              </Col>
+            </Row>
+          </div></Fade>
         </div>
         <div className="section" id="home-4"></div>
       </div>

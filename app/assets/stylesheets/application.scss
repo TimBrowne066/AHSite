@@ -15,6 +15,11 @@
 html {
  font-family: helvetica;
  background-color: white;
+ height: 100%
+}
+
+body{
+  height: 100%;
 }
 
 a {
@@ -150,6 +155,7 @@ a:hover {
 }
 #home-3 {
   background-image: asset_url('div1.JPG');
+  padding: 5vw;
 }
 #home-4 {
   background-image: asset_url('div3.jpg');
@@ -240,7 +246,29 @@ h2{
 .container-2-title{
   background-color: rgba(0,153,255,0.8);
   color: white;
+}
 
+.home-3-container{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5vh;
+  min-height: 50vh;
+  display: flex;
+}
+
+.home-3-image{
+  width: 100%;
+}
+
+.container-3-block{
+  h1{
+    background-color: rgba(0,153,255,0.8);
+    padding: 1vw;
+    color: white;
+  }
+  p{
+    color: black;
+    padding: 3vw;
+  }
 }
 
 .info-bubble{
@@ -372,6 +400,13 @@ h2{
     padding: 30px;
   }
 }
+
+.btn-toolbar{
+  display: flex;
+  justify-content: center;
+  padding: 1.5vh;
+}
+
 @media only screen and (max-width: 500px) {
     .AboutContainer {
       padding: 0vh;
