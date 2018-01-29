@@ -164,10 +164,12 @@ a:hover {
 }
 
 .homeLogo{
-  text-align: center;
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
+  display: block;
+  justify-content: center;
+}
+
+.homeLogoImage{
+  width: 40vw;
 }
 
 div.arrow {
@@ -354,7 +356,7 @@ h2{
 .AboutContainer{
   padding: 10vw;
   width: 100vw;
-  height:100vh;
+  min-height:100vh;
   background-color: rgba(255, 255, 255, 0.8);
   h1{
     background-color: rgba(0,153,255,0.8);
@@ -376,11 +378,20 @@ h2{
     }
     .home-2-container{
       background-color: rgba(255, 255, 255, 0.8);
-      padding: 0vh;
+      padding: 5vw;
       width: 100vw;
       min-height: 100vh;
     }
     #home-2{
       padding: 0px;
     }
+    .homeLogoImage{
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 750px) {
+  .homeLogoImage{
+    width: 70vw;
+  }
 }

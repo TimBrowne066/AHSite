@@ -21,11 +21,9 @@ class HomeContainer extends React.Component {
     return (
       <div className="HomeContainer">
         <div className="section" id="home-1">
-          <Row>
-            <Col>
-              <Image className="homeLogo" src={Logo}/>
-            </Col>
-          </Row>
+          <div className="text-center homeLogo" >
+              <Image className="homeLogoImage" src={Logo}/>
+          </div>
               <div className="welcome">
                 <h1>The IT recruiting model is broken.</h1>
                 <Zoom delay={500}><h2>So we fixed it.</h2></Zoom>
@@ -101,8 +99,7 @@ class HomeContainer extends React.Component {
           </div></Fade>
         </div>
         <div className="section" id="home-3">
-          <PartnerCarousel/>
-          <PartnerCarousel/>
+
         </div>
         <div className="section" id="home-4"></div>
       </div>
