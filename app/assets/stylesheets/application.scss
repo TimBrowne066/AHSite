@@ -159,6 +159,7 @@ a:hover {
 }
 #home-4 {
   background-image: asset_url('div3.jpg');
+  padding-top: 40vh;
 }
 
 .welcome{
@@ -269,6 +270,16 @@ h2{
     color: black;
     padding: 3vw;
   }
+}
+
+.home-4-container{
+  background-color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 3vw;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .info-bubble{
