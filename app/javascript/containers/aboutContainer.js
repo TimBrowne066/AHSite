@@ -15,7 +15,7 @@ class AboutContainer extends React.Component {
   render() {
 
     return (
-      <div className="section" id="home-4">
+      <div className="section" id="about-id">
         <Fade duration={1500}><div className="AboutContainer">
           <div className="about-text">
             <h1>Why choose AgileHires?</h1>

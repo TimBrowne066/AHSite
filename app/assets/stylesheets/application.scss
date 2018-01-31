@@ -161,6 +161,17 @@ a:hover {
   background-image: asset_url('div3.jpg');
   padding-top: 40vh;
 }
+#about-id {
+  background-image: asset_url('div3.jpg');
+}
+#contact-id{
+  background-image: asset_url('div1.JPG');
+  padding: 5vw;
+}
+
+#contact-body{
+  height: 400px;
+}
 
 .welcome{
   color: white;

@@ -26,8 +26,9 @@ class ContactContainer extends React.Component {
   render() {
 
     return (
-      <div className="ContactContainer">
+      <div className="ContactContainer section" id="contact-id">
         <form className="form-title" action="http://www.mydomain.com/cgi-sys/formmail.pl" method="post">
+          <h1>Contact AgileHires</h1>
           <FormGroup controlId="recipient">
             <FormControl
               type="hidden"
@@ -43,6 +44,7 @@ class ContactContainer extends React.Component {
             />
           </FormGroup>
           <FormGroup controlId="email">
+            <ControlLabel>Your Email Address:</ControlLabel>
             <FormControl
               type="text"
               name="email"
@@ -51,9 +53,11 @@ class ContactContainer extends React.Component {
             />
           </FormGroup>
           <FormGroup controlId="body">
+            <ControlLabel>Your Message:</ControlLabel>
             <FormControl
               type="text"
               name="body"
+              id="contact-body"
               componentClass="textarea"
               value={this.state.body}
               onChange={this.handleChange}
