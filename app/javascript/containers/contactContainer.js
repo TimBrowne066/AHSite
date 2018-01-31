@@ -27,13 +27,13 @@ class ContactContainer extends React.Component {
 
     return (
       <div className="ContactContainer section" id="contact-id">
-        <form className="form-title" action="http://www.mydomain.com/cgi-sys/formmail.pl" method="post">
+        <form className="form-title" action="http://www.agilehires.com/cgi-sys/formmail.pl" method="post">
           <h1>Contact AgileHires</h1>
           <FormGroup controlId="recipient">
             <FormControl
               type="hidden"
               name="recipient"
-              value="youremail@here.com"
+              value="arie@agilehires.com"
             />
           </FormGroup>
           <FormGroup controlId="subject">
@@ -68,7 +68,7 @@ class ContactContainer extends React.Component {
             <FormControl
               type="hidden"
               name="redirect"
-              value="/"
+              value="http://agilehires.herokuapp.com"
             />
           </FormGroup>
         </form>
