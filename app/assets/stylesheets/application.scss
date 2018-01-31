@@ -265,6 +265,7 @@ h2{
     background-color: rgba(0,153,255,0.8);
     padding: 1vw;
     color: white;
+    margin-top: 0px;
   }
   p{
     color: black;
@@ -417,6 +418,20 @@ h2{
   justify-content: center;
   padding: 1.5vh;
 }
+.ContactContainer{
+  display: flex;
+  justify-content: center;
+}
+.form-title{
+  text-align: center;
+  padding: 5vw;
+  background-color: rgba(0,153,255,0.8);
+  width: 75vw;
+}
+
+.contact-button{
+  background-color: darkblue;
+}
 
 @media only screen and (max-width: 500px) {
     .AboutContainer {
@@ -433,6 +448,9 @@ h2{
     }
     .homeLogoImage{
       width: 100%;
+    }
+    .form-title{
+      width: 95vw;
     }
 }
 

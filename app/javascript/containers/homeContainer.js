@@ -2,7 +2,6 @@ import React from 'react';
 import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, ButtonToolbar, Well } from 'react-bootstrap';
 import Logo from '../../assets/images/logo1.png';
 import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
-import PartnerCarousel from '../components/partnerCarousel'
 import Twitter from '../../assets/images/twitter.png';
 import Tumblr from '../../assets/images/tumblr.png';
 import LinkedIn from '../../assets/images/media.png'

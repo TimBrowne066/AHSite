@@ -13,6 +13,8 @@ import NavBar from '../components/navBar';
 import JobsContainer from '../containers/jobsContainer';
 import JobShowContainer from '../containers/jobShowContainer';
 import AboutContainer from '../containers/aboutContainer';
+import ContactContainer from '../containers/contactContainer';
+
 ReactOnRails.register({
-  HomeContainer, NavBar, JobsContainer, JobShowContainer, AboutContainer,
+  HomeContainer, NavBar, JobsContainer, JobShowContainer, AboutContainer, ContactContainer,
 });

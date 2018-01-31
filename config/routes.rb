@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :jobs do
   end
   resource :about, only: [:show]
+  resource :contact_us, only: [:show]
 end
