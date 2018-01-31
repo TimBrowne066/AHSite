@@ -68,7 +68,7 @@ class ContactContainer extends React.Component {
             <FormControl
               type="hidden"
               name="redirect"
-              value="http://agilehires.herokuapp.com"
+              value="/"
             />
           </FormGroup>
         </form>
