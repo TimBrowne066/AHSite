@@ -18,7 +18,7 @@ const JobsCarousel = (props) => {
           <Image className="carousel-image" src={Job3}/>
         </Carousel.Item>
         <div className="arrow">
-          <a href="/"><i className="fa fa-chevron-down"></i></a>
+          <a href="/jobs#jobsgrid"><i className="fa fa-chevron-down"></i></a>
         </div>
       </Carousel>
     </div>

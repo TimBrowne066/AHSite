@@ -14,7 +14,8 @@
     "react-responsive-type": "^0.0.2",
     "react-reveal": "^0.7.3",
     "react-search-input": "^0.11.3",
-    "react-textfit": "^1.1.0"
+    "react-textfit": "^1.1.0",
+    "simple-react-bootstrap": "^0.2.7"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.11.0"

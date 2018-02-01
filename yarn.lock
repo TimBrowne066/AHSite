@@ -4877,6 +4877,10 @@ react-prop-types@^0.4.0:
   dependencies:
     warning "^3.0.0"
 
+react-raw-tabs@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-raw-tabs/-/react-raw-tabs-0.0.1.tgz#67f93c6c208287657cf118a11ffdf999f86ccf74"
+
 react-responsive-type@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/react-responsive-type/-/react-responsive-type-0.0.2.tgz#f21a3256b215795d04bee098e37066af6cec57ab"
@@ -5418,6 +5422,12 @@ shebang-regex@^1.0.0:
 signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+simple-react-bootstrap@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/simple-react-bootstrap/-/simple-react-bootstrap-0.2.7.tgz#ab28b33f56664a584fff06a3ea4e73987f2255f4"
+  dependencies:
+    react-raw-tabs "0.0.1"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"

@@ -60,7 +60,7 @@ class JobsContainer extends React.Component {
       <div>
         <JobsCarousel/>
       </div>
-        <div>
+        <div id="jobsgrid">
           <Grid className="home-2-container">
           <h1>Jobs</h1>
             <FormGroup controlId="formFilter">
