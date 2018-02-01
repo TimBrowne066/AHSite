@@ -27,7 +27,7 @@ class AboutContainer extends React.Component {
               <Row className="text-center">
                 <Col sm={12} lg={4}>
                   <Image responsive thumbnail className="me-image" src={Me}/><br/>
-                  <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><b>Arie Mangrum </b></ReactFitText>
+                  <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><h3>Arie Mangrum </h3></ReactFitText>
                   <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><i>Founder of AgileHires</i></ReactFitText>
                 </Col>
                 <Col sm={12} lg={8}>

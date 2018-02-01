@@ -63,12 +63,12 @@ class ContactContainer extends React.Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <Button bsStyle="warning" type="submit" name="submit">Get in Touch!</Button>
+          <Button bsStyle="info" type="submit" name="submit">Get in Touch!</Button>
           <FormGroup controlId="redirect">
             <FormControl
               type="hidden"
               name="redirect"
-              value="/"
+              value="http://agilehires.com"
             />
           </FormGroup>
         </form>

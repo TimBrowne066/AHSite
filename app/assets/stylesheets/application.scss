@@ -210,7 +210,7 @@ div.arrow {
   to { bottom:0; }
 }
 
-h1{
+h1, h3{
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
 }
@@ -436,12 +436,13 @@ h2{
 .form-title{
   text-align: center;
   padding: 5vw;
-  background-color: rgba(0,153,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 75vw;
-}
-
-.contact-button{
-  background-color: darkblue;
+  h1{
+    background-color: rgba(0,153,255,0.8);
+    color: white;
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
