@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, Well, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import { Modal } from 'simple-react-bootstrap';
+import axios, { post } from 'axios';
 
 class JobShowContainer extends React.Component {
   constructor(props) {
@@ -13,6 +14,31 @@ class JobShowContainer extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this)
+    this.onChange = this.onChange.bind(this)
+    this.fileUpload = this.fileUpload.bind(this)
+  }
+  onFormSubmit(e){
+    e.preventDefault() // Stop form submit
+    this.fileUpload(this.state.file).then((response)=>{
+      console.log(response.data);
+    })
+  }
+
+  onChange(e) {
+    this.setState({file:e.target.files[0]})
+  }
+
+  fileUpload(file){
+    const url = 'http://example.com/file-upload';
+    const formData = new FormData();
+    formData.append('file',file)
+    const config = {
+        headers: {
+            'content-type': 'multipart/form-data'
+        }
+    }
+    return  post(url, formData,config)
   }
 
   handleClick(){
@@ -46,60 +72,12 @@ class JobShowContainer extends React.Component {
               <p className="detail">Expectations:</p><p>{this.props.job.expectations}</p>
               <p className="detail">Requirements:</p><p>{this.props.job.requirements}</p>
               <i>Posted on: {date2}</i><br/>
-              <Button bsSize="large" bsStyle="success" onClick={this.handleClick}>APPLY!</Button>
+               <a href="javascript:void( window.open( 'https://form.jotform.com/80325726619157', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "><Button bsSize="large" bsStyle="success">APPLY!</Button></a>
               <Button href="/jobs/" bsSize="large" bsStyle="warning">Back to Jobs</Button>
             </Col></Fade>
           </Row>
         </Grid>
         <Modal className="fade" show={this.state.applyModal} onHide={() => this.setState({ applyModal: false })}>
-          <Modal.Body className="apply-modal">
-            <h1>{this.props.job.title}</h1>
-            <form className="form-title" action="http://www.agilehires.com/cgi-sys/formmail.pl" method="post">
-              <FormGroup controlId="recipient">
-                <FormControl
-                  type="hidden"
-                  name="recipient"
-                  value="arie@agilehires.com"
-                />
-              </FormGroup>
-              <FormGroup controlId="subject">
-                <FormControl
-                  type="hidden"
-                  name="subject"
-                  value={this.props.job.title}
-                />
-              </FormGroup>
-              <FormGroup controlId="email">
-                <ControlLabel>Your Email Address:</ControlLabel>
-                <FormControl
-                  type="text"
-                  name="email"
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                />
-              </FormGroup>
-              <FormGroup controlId="file">
-                <ControlLabel>Attach Your Resume:</ControlLabel>
-                <FormControl
-                  type="file"
-                  name="file"
-                  value={this.state.file}
-                  onChange={this.handleChange}
-                />
-              </FormGroup>
-              <Button bsStyle="info" type="submit" name="submit">Apply!</Button>
-              <FormGroup controlId="redirect">
-                <FormControl
-                  type="hidden"
-                  name="redirect"
-                  value="http://agilehires.com"
-                />
-              </FormGroup>
-            </form>
-          </Modal.Body>
-          <Modal.Footer>
-            <button type="button" className="btn btn-danger" onClick={() => this.setState({ applyModal: false })}>Close</button>
-          </Modal.Footer>
         </Modal>
       </div>
     );

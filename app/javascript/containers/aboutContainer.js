@@ -22,17 +22,14 @@ class AboutContainer extends React.Component {
             <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><p>As an organization, there are literally hundreds of staffing agencies you could reach out to when it comes to filling your IT needs.</p></ReactFitText>
             <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><p>As a candidate, you have the same number of options – or you could just upload your resume to any number of job boards and let them come to you, right?</p></ReactFitText>
             <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><p>The founder of AgileHires has the unique perspective of not only being part of a top staffing agency, but being an IT professional who dealt with recruiters dozens of times.</p></ReactFitText>
-            <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><p>In the interest of your time, here are some of the top ways AgileHires differs from our competition.</p></ReactFitText>
             <Grid>
               <Row className="text-center">
                 <Col sm={12} lg={4}>
                   <Image responsive thumbnail className="me-image" src={Me}/><br/>
-                  <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><h3>Arie Mangrum </h3></ReactFitText>
-                  <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><i>Founder of AgileHires</i></ReactFitText>
+                  <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><h3>Arie Mangrum </h3></ReactFitText><i>Founder of AgileHires</i><br/><br/>
                 </Col>
                 <Col sm={12} lg={8}>
                   <ReactFitText minFontSize={14} maxFontSize={20} compressor={0.5}><p>AgileHires believes in supplementing the IT industry and making it better.</p></ReactFitText>
-                  <ReactFitText minFontSize={14} maxFontSize={16} compressor={0.5}><p>Some more stuff here!</p></ReactFitText>
                 </Col>
               </Row>
             </Grid>

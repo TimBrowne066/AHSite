@@ -452,6 +452,9 @@ h2{
   }
 }
 
+iframe{
+  width: 80%;
+}
 @media only screen and (max-width: 500px) {
     .AboutContainer {
       padding: 0vh;
@@ -470,6 +473,9 @@ h2{
     }
     .form-title{
       width: 95vw;
+    }
+    iframe{
+      width: 100%;
     }
 }
 

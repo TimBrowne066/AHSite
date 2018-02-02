@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, ControlLabel, FormControl, Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, ButtonToolbar, Well } from 'react-bootstrap';
+import { Carousel, Image, Navbar, NavItem, MenuItem, NavDropdown, Nav, PanelGroup, Panel, Grid, Row, Col, Button, ButtonToolbar, Well } from 'react-bootstrap';
 import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import Twitter from '../../assets/images/twitter.png';
 import Tumblr from '../../assets/images/tumblr.png';
@@ -11,67 +11,24 @@ class ContactContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "",
-      body: "",
-    }
-    this.handleChange = this.handleChange.bind(this);
-  }
 
-    handleChange(e){
-    let name = e.target.name
-    let value = e.target.value
-    this.setState({[name]: value})
+    }
   }
 
   render() {
 
     return (
-      <div className="ContactContainer section" id="contact-id">
-        <form className="form-title" action="http://www.agilehires.com/cgi-sys/formmail.pl" method="post">
-          <h1>Contact AgileHires</h1>
-          <FormGroup controlId="recipient">
-            <FormControl
-              type="hidden"
-              name="recipient"
-              value="arie@agilehires.com"
-            />
-          </FormGroup>
-          <FormGroup controlId="subject">
-            <FormControl
-              type="hidden"
-              name="subject"
-              value="New Message!"
-            />
-          </FormGroup>
-          <FormGroup controlId="email">
-            <ControlLabel>Your Email Address:</ControlLabel>
-            <FormControl
-              type="text"
-              name="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="body">
-            <ControlLabel>Your Message:</ControlLabel>
-            <FormControl
-              type="text"
-              name="body"
-              id="contact-body"
-              componentClass="textarea"
-              value={this.state.body}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <Button bsStyle="info" type="submit" name="submit">Get in Touch!</Button>
-          <FormGroup controlId="redirect">
-            <FormControl
-              type="hidden"
-              name="redirect"
-              value="http://agilehires.com"
-            />
-          </FormGroup>
-        </form>
+      <div className="ContactContainer" id="contact-id">
+      <div className="welcome">
+        <h1>Contact us.</h1>
+        <div className="icon-group">
+          <a href="https://twitter.com/agilehires?lang=en"><Fade delay={250}><img className="icon" src={Twitter}/></Fade></a>
+          <a href="http://agilehires.tumblr.com/"><Fade delay={500}><img className="icon" src={Tumblr}/></Fade></a>
+          <a href="https://www.linkedin.com/company/agilehires/"><Fade delay={750}><img className="icon" src={LinkedIn}/></Fade></a>
+          <a href="mailto:arie@agilehires.com"><Fade delay={1000}><img className="icon" src={Email}/></Fade></a>
+          <a href="tel:215-277-5680"><Fade delay={1250}><img className="icon" src={Phone}/></Fade></a>
+        </div>
+      </div>
       </div>
     );
   }
