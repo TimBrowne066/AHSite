@@ -65,19 +65,20 @@ class JobShowContainer extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Fade delay={150}><Col sm={12} className="job-details">
+            <Fade delay={150}><Col lg={12} className="job-details">
               <p className="detail">Location:</p><p>{this.props.job.city}, {this.props.job.state}<br/>{this.props.job.zipcode}</p>
               <p className="detail">Summary:</p><p>{this.props.job.summary}</p>
               <p className="detail">Description:</p><p>{this.props.job.description}</p>
               <p className="detail">Expectations:</p><p>{this.props.job.expectations}</p>
               <p className="detail">Requirements:</p><p>{this.props.job.requirements}</p>
               <i>Posted on: {date2}</i><br/>
-               <a href="javascript:void( window.open( 'https://form.jotform.com/80325726619157', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "><Button bsSize="large" bsStyle="success">APPLY!</Button></a>
+              <Button bsSize="large" bsStyle="success" onClick={this.handleClick}>APPLY!</Button>
               <Button href="/jobs/" bsSize="large" bsStyle="warning">Back to Jobs</Button>
             </Col></Fade>
           </Row>
         </Grid>
         <Modal className="fade" show={this.state.applyModal} onHide={() => this.setState({ applyModal: false })}>
+          <iframe id="JotFormIFrame-80325726619157" onLoad="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" src="https://form.jotform.com/80325726619157" frameborder="0" scrolling="yes" > </iframe>
         </Modal>
       </div>
     );

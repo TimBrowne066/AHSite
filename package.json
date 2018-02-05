@@ -11,6 +11,7 @@
     "react-bootstrap": "^0.32.0",
     "react-dom": "^16.2.0",
     "react-fittext": "^1.0.0",
+    "react-jotform-embed": "^1.0.3",
     "react-on-rails": "^10.0.2",
     "react-responsive-type": "^0.0.2",
     "react-reveal": "^0.7.3",

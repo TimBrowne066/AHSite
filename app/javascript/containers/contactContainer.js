@@ -18,17 +18,10 @@ class ContactContainer extends React.Component {
   render() {
 
     return (
-      <div className="ContactContainer" id="contact-id">
-      <div className="welcome">
-        <h1>Contact us.</h1>
-        <div className="icon-group">
-          <a href="https://twitter.com/agilehires?lang=en"><Fade delay={250}><img className="icon" src={Twitter}/></Fade></a>
-          <a href="http://agilehires.tumblr.com/"><Fade delay={500}><img className="icon" src={Tumblr}/></Fade></a>
-          <a href="https://www.linkedin.com/company/agilehires/"><Fade delay={750}><img className="icon" src={LinkedIn}/></Fade></a>
-          <a href="mailto:arie@agilehires.com"><Fade delay={1000}><img className="icon" src={Email}/></Fade></a>
-          <a href="tel:215-277-5680"><Fade delay={1250}><img className="icon" src={Phone}/></Fade></a>
-        </div>
-      </div>
+      <div className="ContactContainer section" id="contact-id">
+
+        <iframe id="JotFormIFrame-80325267019151" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" src="https://form.jotform.com/80325267019151" frameborder="0" scrolling="yes" > </iframe>
+
       </div>
     );
   }

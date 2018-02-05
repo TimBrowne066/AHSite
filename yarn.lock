@@ -4869,6 +4869,10 @@ react-fittext@^1.0.0:
     create-react-class "^15.5.3"
     prop-types "^15.5.10"
 
+react-jotform-embed@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-jotform-embed/-/react-jotform-embed-1.0.3.tgz#44d4b4a55281697460b7689ade642f43f2d7660a"
+
 react-on-rails@^10.0.2:
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-10.0.2.tgz#4d17b9e1df403ad3ff013f36654957051761c35a"
