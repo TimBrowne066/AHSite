@@ -112,7 +112,7 @@ class HomeContainer extends React.Component {
                 <p>AgileHires is excited to bring change to the recruiting industry.  We're about relationships, not resumes.  We recently teamed with CodedByKids to provide tailored technical talent to local companies.  If you need Node, Angular, Ruby, PHP, etc - they will teach it.  ZipCode students focus on Java & .NET.</p>
                 <ButtonToolbar>
                   <Button href="http://www.codedbykids.com/" bsSize="large" bsStyle="danger">Learn More</Button>
-                  <Button href="/contact" bsSize="large" bsStyle="warning">Contact Us</Button>
+                  <Button href="/contact_us" bsSize="large" bsStyle="warning">Contact Us</Button>
                 </ButtonToolbar>
               </Col>
             </Row>
@@ -127,7 +127,7 @@ class HomeContainer extends React.Component {
                 <p>Get ready to fall in love with your talent partner.  AgileHires is the only IT recruiting agency built from the ground up to be different, and now we've partnered with the Be Group to provide outstanding Sales and Marketing candidates.</p>
                 <ButtonToolbar>
                   <Button href="https://www.begroupconnects.com/" bsSize="large" bsStyle="danger">Learn More</Button>
-                  <Button href="/contact" bsSize="large" bsStyle="warning">Contact Us</Button>
+                  <Button href="/contact_us" bsSize="large" bsStyle="warning">Contact Us</Button>
                 </ButtonToolbar>
               </Col>
             </Row>
