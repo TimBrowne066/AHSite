@@ -72,8 +72,8 @@ class JobShowContainer extends React.Component {
               <p className="detail">Expectations:</p><p>{this.props.job.expectations}</p>
               <p className="detail">Requirements:</p><p>{this.props.job.requirements}</p>
               <i>Posted on: {date2}</i><br/>
-              <Button bsSize="large" bsStyle="success" onClick={this.handleClick}>APPLY!</Button>
-              <Button href="/jobs/" bsSize="large" bsStyle="warning">Back to Jobs</Button>
+              <Button bsStyle="success" onClick={this.handleClick}>APPLY!</Button>
+              <Button href="/jobs/" bsStyle="warning">Back to Jobs</Button>
             </Col></Fade>
           </Row>
         </Grid>
