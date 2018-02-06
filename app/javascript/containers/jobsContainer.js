@@ -57,9 +57,6 @@ class JobsContainer extends React.Component {
     })
     return (
       <div className="JobsContainer">
-      <div>
-        <JobsCarousel/>
-      </div>
         <div id="jobsgrid">
           <Grid className="home-2-container">
           <h1>Jobs</h1>
