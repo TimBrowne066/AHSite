@@ -64,7 +64,7 @@ class JobShowContainer extends React.Component {
               <h3>{this.props.job.title}</h3>
             </Col>
           </Row>
-          <Row>
+          <Row className="job-row">
             <Fade delay={150}><Col lg={12} className="job-details">
               <p className="detail">Location:</p><p>{this.props.job.city}, {this.props.job.state}<br/>{this.props.job.zipcode}</p>
               <p className="detail">Summary:</p><p>{this.props.job.summary}</p>
