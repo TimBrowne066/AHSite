@@ -41,6 +41,9 @@ class HomeContainer extends React.Component {
             <a href="#home-2"><i className="fa fa-chevron-down"></i></a>
           </div>
         </div>
+        <div className="divider">
+          <p>WHO WE ARE.<span>|</span></p>
+        </div>
         <div className="section" id="home-2">
           <Fade><div className="home-2-container">
               <Row className="container-2-title">
@@ -101,6 +104,9 @@ class HomeContainer extends React.Component {
               </Row>
           </div></Fade>
         </div>
+        <div className="divider">
+          <p>TEAM UP.<span>|</span></p>
+        </div>
         <div className="section" id="home-3">
           <Fade><div className="home-3-container">
             <Row>
@@ -132,6 +138,9 @@ class HomeContainer extends React.Component {
               </Col>
             </Row>
           </div></Fade>
+        </div>
+        <div className="divider">
+          <p>REACH OUT.<span>|</span></p>
         </div>
         <div className="section" id="home-4">
           <div className="text-center home-4-container">

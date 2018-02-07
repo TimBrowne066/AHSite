@@ -159,7 +159,7 @@ a:hover {
 }
 #home-4 {
   background-image: asset_url('div3.jpg');
-  padding-top: 40vh;
+  padding-top: 30vh;
 }
 #about-id {
   background-image: asset_url('div3.jpg');
@@ -480,6 +480,43 @@ iframe{
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
+
+.divider{
+  width: 100vw;
+  height: 20vh;
+  background-color: white;
+  justify-content: center;
+  p{
+    color: black;
+    font-size: 13vh;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 2s steps(60, end);
+    text-align: left;
+    padding-left: 15px;
+    text-shadow: 1px 1px 2px darkgrey;
+  }
+  p:nth-child(2){
+    animation: type2 8s steps(60, end);
+  }
+  span{
+    animation: blink 1s infinite;
+  }
+  @keyframes type{
+    from { width: 0; }
+  }
+
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; }
+  }
+
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+}
 @media only screen and (max-width: 500px) {
     .AboutContainer {
       padding: 0vh;
@@ -508,6 +545,10 @@ iframe{
 
     .jobCard .link-button{
       font-size: 2vw;
+    }
+    .divider p{
+      padding-top: 6vh;
+      font-size: xx-large;
     }
 }
 
