@@ -14,7 +14,7 @@ const JobCard = (props) => {
           <b>About:</b>
           <p>{props.summary}</p>
           <br/>
-          <i>Posted on:</i>
+          <i>Posted on: </i>
           <i>{date2}</i>
         </div>
       </Col>
