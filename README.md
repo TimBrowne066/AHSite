@@ -33,4 +33,4 @@ Application is Heroku ready.  Just create a remote and deploy to the branch of y
 
 ##### ex:
 
-$git push heroku master
+`$git push heroku master`
