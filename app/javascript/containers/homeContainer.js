@@ -24,25 +24,24 @@ class HomeContainer extends React.Component {
           <div className="text-center homeLogo" >
               <Image className="homeLogoImage" src={Logo}/>
           </div>
-              <div className="welcome">
-                <h1>The IT recruiting model is broken.</h1>
-                <Zoom delay={500}><h2>So we fixed it.</h2></Zoom>
-                </div>
-
                 <Fade><div className="home-2-container">
+
                     <Row className="container-2-title">
                       <Col sm={12}>
-                        <h1>IT STAFFING FOR TODAY.</h1>
+                      <h1>The IT recruiting model is broken.</h1>
+                      <Zoom delay={500}><h2>So we fixed it.</h2></Zoom>
                         <p>AgileHires was born out of the idea that IT recruiting was a good concept, but could be done much better. Find out why AgileHires is IT Recruiting for Today. Our recruiting efforts are focused in Pennsylvania, New Jersey, and Delaware.</p>
                       </Col>
                     </Row>
                     <Row>
 
                     <Col className="text-center" sm={12} lg={4}>
-                      <h1 className="floatingtext">For clients:</h1>
+                      <Fade delay={500}><h1 className="floatingtext">For clients:</h1>
                       <div className="info-bubble">
                         <p>Fees starting at</p>
                         <h1>15%</h1>
+                        <i>   <br/></i>
+
                       </div>
                         <ul>
                           <li>Every one of our experienced recruiters has first-hand knowledge of the IT industry.</li>
@@ -51,10 +50,10 @@ class HomeContainer extends React.Component {
                           <li>We rely on connections gained through years of experience in IT, not just the job boards.</li>
                           <li>We take time to meet each candidate in person to determine if they are indeed a great fit.</li>
                         </ul>
-                        <Button href="/contact_us" bsStyle="success">Work With Us!</Button>
+                        <Button href="/contact_us" bsStyle="primary">Work With Us!</Button></Fade>
                     </Col>
                       <Col className="text-center" sm={12} lg={4}>
-                        <h1 className="floatingtext">For candidates:</h1>
+                        <Fade delay={1000}><h1 className="floatingtext">For candidates:</h1>
                         <div className="info-bubble">
                           <p>Our recruiters have</p>
                           <h1 className="real-it-experience">REAL IT EXPERIENCE</h1>
@@ -66,13 +65,15 @@ class HomeContainer extends React.Component {
                             <li>We will provide consistent follow up and feedback as to why you did not get an interview or were not hired.</li>
                             <li>If you are actively seeking, we will market you to open positions rather than letting your resume sit in a pile.</li>
                           </ul>
-                          <Button href="/jobs" bsStyle="warning">See Job Postings!</Button>
+                          <Button href="/jobs" bsStyle="primary">See Job Postings!</Button></Fade>
                       </Col>
                       <Col className="text-center" sm={12} lg={4}>
-                        <h1 className="floatingtext">The Competition:</h1>
+                        <Fade delay={1500}><h1 className="floatingtext">The Competition:</h1>
                         <div className="info-bubble">
                           <p>Fees as high as</p>
-                          <h1>22%</h1>
+                          <h1>30%</h1>
+                          <i>Average 23%</i>
+
                         </div>
                           <ul>
                             <li>Recruiters rarely ever have backgrounds in technology, and cannot convey the specifics of a role.</li>
@@ -81,7 +82,7 @@ class HomeContainer extends React.Component {
                             <li>They provide no feedback, but they will modify your resume without you asking at times.</li>
                             <li>They leave your resume to collect dust, only calling you when they have a job that you could be a fit for.</li>
                           </ul>
-                          <Button href="/about" bsStyle="danger">Learn More!</Button>
+                          <Button href="/about" bsStyle="primary">Learn More!</Button></Fade>
                       </Col>
                     </Row>
                     <Row className="container-2-title">

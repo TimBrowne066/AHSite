@@ -240,9 +240,8 @@ h2{
 }
 
 .home-2-container{
+  margin-top: 5vh;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 5vh;
-  padding-bottom: 0.5vh;
   min-height: 100vh;
   h1{
     padding-top: 10px;
@@ -267,9 +266,17 @@ h2{
 }
 
 .container-2-title{
+  justify-content: center;
+  margin: 0px;
+  width: 100%;
   background-color: rgba(0,153,255,0.8);
   color: white;
   margin-bottom: 2vh;
+  p{
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 .home-3-container{
@@ -310,7 +317,7 @@ h2{
   display: inline-grid;
   border-radius: 25px;
   margin-bottom: 10px;
-  width: 300px;
+  width: 80%;
   height: 300px;
   text-align: center;
   background-color: #003399;
@@ -321,9 +328,8 @@ h2{
     padding-top: 10vh;
   }
   h1{
-    padding-bottom: 1em;
     font-size: 5em;
-    color: lightgreen;
+    color: white;
   }
   .real-it-experience{
     font-size: 4em;
@@ -539,6 +545,9 @@ iframe{
   }
 }
 @media only screen and (max-width: 500px) {
+    html{
+      overflow-x: hidden;
+    }
     .AboutContainer {
       padding: 0vh;
     }
